@@ -6,69 +6,84 @@
 
 ## Learnings from Module 1(Course 1)
 
-From this course, we learned how to make a simple graph.  
-We understood the concept of **states**, which hold the data passed between nodes. It ensures every function knows what kind of data it is receiving and returning.  
-
-Each **node** is a small function that takes the current state, modifies it, and returns the updated version.  
-**Edges** tell the graph how the nodes are connected.  
-The **StateGraph** class helps in building this pipeline and managing the flow between nodes.
+- Learned how to make a simple graph.  
+- Understood the concept of **states**, which hold the data passed between nodes and ensure every function knows what kind of data it is receiving and returning.  
+- Each **node** is a small function that takes the current state, modifies it, and returns the updated version.  
+- **Edges** tell the graph how the nodes are connected.  
+- The **StateGraph** class helps in building this pipeline and managing the flow between nodes.
 
 ---
 
 ## Changes Implemented in Module 1 (Course 1)
 
-I created my own version of the graph with **five nodes**, representing a simple flow of sentences.  
-Instead of using conditional edges, I implemented a **linear sequence of nodes**, where each node updates the text state.  
-The final output forms a smooth message by passing the state sequentially through all nodes until reaching the `END` node.
+- Created a graph with **five nodes**, representing a simple flow of sentences.  
+- Implemented a **linear sequence of nodes**, instead of conditional edges, where each node updates the text state.  
+- Final output forms a smooth message by passing the state sequentially through all nodes until reaching the `END` node.
 
 ---
 
 ## Learnings from Module 1 (Course 2)
 
-We learned how to create **messages** that capture different roles, such as `AIMessage` and `HumanMessage`, and how to use them in chat models.  
-We understood that chat models can take multiple messages as input and generate a follow-up response based on the conversation history.  
-We also learned how to **bind tools with an LLM**, allowing the model to perform specific tasks programmatically.  
-Additionally, we explored how to use **messages as the graph state** and how to integrate **MessageState** with our graph for dynamic conversation flows.
+- Learned how to create **messages** that capture different roles (`AIMessage` and `HumanMessage`) and use them in chat models.  
+- Chat models can take multiple messages as input and generate follow-up responses based on conversation history.  
+- Learned how to **bind tools with an LLM**, enabling the model to perform specific tasks programmatically.  
+- Explored using **messages as the graph state** and integrating **MessageState** with the graph for dynamic conversation flows.
 
 ---
 
 ## Changes Implemented in Module 1 (Course 2)
 
-We implemented a **coding-related conversation** graph where the user could ask programming questions, and the LLM would respond contextually.  
-We also created a **factorial tool** and bound it to the LLM, allowing the graph to perform computations dynamically based on user input.  
-These changes made the graph more **interactive and versatile**, enabling it to handle coding queries and execute functions while maintaining conversation context.
+- Implemented a **coding-related conversation** graph where the LLM responds contextually to programming questions.  
+- Created a **factorial tool** and bound it to the LLM, allowing the graph to perform computations dynamically based on user input.  
+- Enhanced interactivity and versatility, enabling the graph to handle coding queries and execute functions while maintaining conversation context.
 
 ---
+
 ## Learnings from Module 1 (Course 3)
 
-We learned how to implement a **router in Langgraph** that can decide how to respond to a user.  
-The router can either return a direct **LLM response** or evaluate the LLM's output and call a **tool** to generate the correct response.  
-This approach allows dynamic decision-making within the graph based on the conversation context.
+- Learned how to implement a **router in Langgraph** to decide how to respond to a user.  
+- Router can either return a direct **LLM response** or evaluate the LLM's output and call a **tool** to generate the correct response.  
+- Enables dynamic decision-making within the graph based on conversation context.
 
 ---
 
 ## Changes Implemented in Module 1 (Course 3)
 
-We implemented a graph with a **factorial tool** integrated into it.  
-When a user provides input, the graph first asks the LLM for a response.  
-The router then **judges the LLM's response**; if the response is not appropriate, it calls the factorial tool to provide a correct answer.  
-These changes made the graph **interactive and reliable**, combining LLM flexibility with deterministic tool execution.
+- Implemented a graph with a **factorial tool** integrated.  
+- Graph first asks the LLM for a response when a user provides input.  
+- Router **judges the LLM's response**; if inappropriate, it calls the factorial tool to provide a correct answer.  
+- Made the graph **interactive and reliable**, combining LLM flexibility with deterministic tool execution.
 
 ---
 
 ## Learnings from Module 1 (Course 4)
 
-We learned how to use a **graph to interact with an LLM** in a dynamic way.  
-The graph can send user input to the LLM for a response, and if the LLM output is not appropriate, a **tool is called** to generate the correct response.  
-The tool output is then passed back to the LLM, and this loop continues until a **suitable response** is obtained.  
-This approach demonstrates a **ReAct-style architecture**, enabling multi-step reasoning and dynamic decision-making.
+- Learned how to use a **graph to interact with an LLM** dynamically.  
+- Graph sends user input to the LLM, and if output is not appropriate, a **tool is called** to generate the correct response.  
+- Tool output is passed back to the LLM, looping until a **suitable response** is obtained.  
+- Demonstrates a **ReAct-style architecture**, enabling multi-step reasoning and dynamic decision-making.
 
 ---
 
 ## Changes Implemented in Module 1 (Course 4)
 
-We implemented a graph with **multiple string manipulation tools** bound to an LLM.  
-The graph evaluates the LLM output and selectively calls the appropriate tool based on the user query.  
-This ensures that the user receives **accurate and contextually appropriate responses**, leveraging both the LLM’s reasoning capabilities and deterministic tool execution.
+- Implemented a graph with **multiple string manipulation tools** bound to an LLM.  
+- Graph evaluates the LLM output and selectively calls the appropriate tool based on user input.  
+- Ensures **accurate and contextually appropriate responses**, leveraging both LLM reasoning and deterministic tool execution.
 
+---
+
+## Learnings from Module 1 (Course 5)
+
+- Explored **ReAct-style design for Langgraph graphs**.  
+- Learned to bind multiple tools to an LLM and dynamically evaluate user input based on **LLM output** and **tool execution**.  
+- Implemented **memory management** to save interactions, enabling multi-step reasoning and maintaining context across multiple messages.
+
+---
+
+## Changes Implemented in Module 1 (Course 5)
+
+- Created **multiple string manipulation tools**, including reversing strings, converting to uppercase, and counting vowels.  
+- Implemented a **ReAct-style graph** that binds these tools with an LLM, allowing the system to decide whether to respond directly or call a tool.  
+- Incorporated **threaded memory**, so each conversation thread preserves context and previous outputs, ensuring consistent and context-aware responses across multiple interactions.
 ---
