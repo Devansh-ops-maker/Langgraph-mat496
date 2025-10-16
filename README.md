@@ -39,3 +39,19 @@ We also created a **factorial tool** and bound it to the LLM, allowing the graph
 These changes made the graph more **interactive and versatile**, enabling it to handle coding queries and execute functions while maintaining conversation context.
 
 ---
+## Learnings from Module 1 (Course 3)
+
+We learned how to implement a **router in Langgraph** that can decide how to respond to a user.  
+The router can either return a direct **LLM response** or evaluate the LLM's output and call a **tool** to generate the correct response.  
+This approach allows dynamic decision-making within the graph based on the conversation context.
+
+---
+
+## Changes Implemented in Module 1 (Course 3)
+
+We implemented a graph with a **factorial tool** integrated into it.  
+When a user provides input, the graph first asks the LLM for a response.  
+The router then **judges the LLM's response**; if the response is not appropriate, it calls the factorial tool to provide a correct answer.  
+These changes made the graph **interactive and reliable**, combining LLM flexibility with deterministic tool execution.
+
+---
