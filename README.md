@@ -55,3 +55,20 @@ The router then **judges the LLM's response**; if the response is not appropriat
 These changes made the graph **interactive and reliable**, combining LLM flexibility with deterministic tool execution.
 
 ---
+
+## Learnings from Module 1 (Course 4)
+
+We learned how to use a **graph to interact with an LLM** in a dynamic way.  
+The graph can send user input to the LLM for a response, and if the LLM output is not appropriate, a **tool is called** to generate the correct response.  
+The tool output is then passed back to the LLM, and this loop continues until a **suitable response** is obtained.  
+This approach demonstrates a **ReAct-style architecture**, enabling multi-step reasoning and dynamic decision-making.
+
+---
+
+## Changes Implemented in Module 1 (Course 4)
+
+We implemented a graph with **multiple string manipulation tools** bound to an LLM.  
+The graph evaluates the LLM output and selectively calls the appropriate tool based on the user query.  
+This ensures that the user receives **accurate and contextually appropriate responses**, leveraging both the LLM’s reasoning capabilities and deterministic tool execution.
+
+---
