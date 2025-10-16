@@ -4,7 +4,7 @@
 
 ---
 
-## Learnings from this Course
+## Learnings from Module 1(Course 1)
 
 From this course, we learned how to make a simple graph.  
 We understood the concept of **states**, which hold the data passed between nodes. It ensures every function knows what kind of data it is receiving and returning.  
