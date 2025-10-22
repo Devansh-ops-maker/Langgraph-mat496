@@ -102,3 +102,25 @@
 - Demonstrated how to **leverage different state types** to build flexible, type-safe, and interactive graphs in Langgraph.
 
 ---
+
+## Learnings from Module 2 (Course 2)
+
+- Learned how **branching** can raise errors when multiple nodes overwrite the same state in one step.  
+- Explored **reducers** to safely manage state updates.  
+- Implemented **custom reducers** for more control.  
+- Learned advanced **message handling tricks**:  
+  - Adding messages  
+  - Overwriting messages by ID  
+  - Deleting messages  
+- Used **`message_reducer`** to apply these tricks safely in conversation flows.  
+
+---
+
+## Changes Implemented in Module 2 (Course 2)
+
+- Demonstrated **TypedDict** as a **StateSchema**.  
+- Implemented branching with a **shopping cart example**, showing state conflicts.  
+- Fixed branching errors using **annotated lists** with built-in reducers.  
+- Extended fixes using **custom reducers**.  
+- Created a conversation flow demonstrating all message tricks: **add, overwrite, delete**.  
+---
