@@ -124,3 +124,20 @@
 - Extended fixes using **custom reducers**.  
 - Created a conversation flow demonstrating all message tricks: **add, overwrite, delete**.  
 ---
+
+## Learnings from Module 2 (Course 3)
+
+- Learned the difference between **private state** and **overall state**:  
+  - **Private state** is used for intermediate logic within the graph.  
+  - **Overall state** is used for the final output of the graph.  
+- Learned how to define **explicit input and output schemas** instead of using a single schema for the entire StateGraph.  
+- Understood how separating states and schemas improves clarity, modularity, and type safety in complex graphs.  
+
+---
+
+## Changes Implemented in Module 2 (Course 3)
+
+- Implemented **private and overall state** using a chess-related example.  
+- Demonstrated the use of **multiple schemas** with a laptop purchase scenario.  
+- Showcased how explicit input/output schemas and private state help manage intermediate logic without affecting the final output.  
+---
