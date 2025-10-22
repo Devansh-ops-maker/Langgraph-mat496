@@ -87,3 +87,18 @@
 - Implemented a **ReAct-style graph** that binds these tools with an LLM, allowing the system to decide whether to respond directly or call a tool.  
 - Incorporated **threaded memory**, so each conversation thread preserves context and previous outputs, ensuring consistent and context-aware responses across multiple interactions.
 ---
+
+### Learnings from Module 2 (Course 1)
+
+- Learned how to define and use **custom state classes** in Langgraph, including `TypedDictState`, `Dataclass`-based states, and `Pydantic` models.
+- Understood how these state classes can be **integrated with the `StateGraph`**, allowing nodes to receive and return strongly-typed data.
+- Gained insight into how **typed states improve graph clarity and reliability**, ensuring that each node knows exactly what kind of data it is handling.
+
+### Changes Implemented in Module 2 (Course 1)
+
+- Implemented a **coding language state class** using `TypedDictState` and integrated it into a Langgraph `StateGraph`.
+- Created a **chess move state class** using Python `Dataclass` and used it in a graph to model chess strategies.
+- Developed a **school board state class** with `Pydantic` validation to represent students and their respective boards (CBSE/ICSE), and integrated it into a `StateGraph`.
+- Demonstrated how to **leverage different state types** to build flexible, type-safe, and interactive graphs in Langgraph.
+
+---
