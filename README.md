@@ -141,3 +141,22 @@
 - Demonstrated the use of **multiple schemas** with a laptop purchase scenario.  
 - Showcased how explicit input/output schemas and private state help manage intermediate logic without affecting the final output.  
 ---
+
+## Learnings from Module 2 (Course 4)
+
+- Learned how to use **messages as a State** in LangGraph.  
+- Revised the concept of **`message_reducer`** to safely manage message updates within conversation flows.  
+- Explored advanced message-handling techniques such as:  
+  - **Filtering messages** before sending them to the LLM to include only relevant context.  
+  - **Trimming messages** using `trim_messages()` to manage token limits efficiently.  
+- Understood how these techniques optimize LLM calls, preserve essential context, and reduce unnecessary token usage.
+
+---
+
+## Changes Implemented in Module 2 (Course 4)
+
+- Implemented a **JEE-related conversation** demonstrating the use of messages as a State.  
+- Applied **message management techniques** (filtering and trimming) within this conversation between the human and the LLM model.  
+- Showcased how these techniques improve conversation efficiency, maintain focus on recent context, and ensure concise and contextually relevant responses from the model.
+
+---
