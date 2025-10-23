@@ -160,3 +160,22 @@
 - Showcased how these techniques improve conversation efficiency, maintain focus on recent context, and ensure concise and contextually relevant responses from the model.
 
 ---
+
+## Learnings from Module 2 (Course 5)
+
+- Used messages as the graph state for dynamic conversation handling.
+- Implemented conversation summarization to maintain context.
+- Managed memory across threads for independent conversation sessions.
+- Applied message manipulations like trimming and deleting old messages.
+- Used conditional graph flows to decide between summarizing or ending a conversation.
+- Learned best practices for state management to enable multi-step reasoning.
+
+### Changes Implemented in Module 2 (Course 5)
+
+- Created a threaded animal chatbot for independent conversation sessions.
+- Implemented memory with summarization to keep track of conversation context.
+- Filtered and deleted older messages dynamically to reduce LLM prompt size.
+- Added conditional flow to summarize conversation when messages exceed a threshold.
+- Enabled interactive conversation where the model responds contextually.
+
+---
