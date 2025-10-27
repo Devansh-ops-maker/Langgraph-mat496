@@ -230,3 +230,25 @@
 - Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/breakpoints.ipynb  
 
 ---
+
+### Learnings from Module 3 (Course 3)
+
+- Learned to perform state updates after interruptions using human feedback.  
+- Understood human-in-the-loop correction for adaptive AI workflows.  
+- Created a `human_feedback` node to inject user updates dynamically.  
+- Used `interrupt_before` and `update_state()` for mid-run state modification.  
+- Learned how checkpointers enable resuming from paused states.  
+- Observed improved interactivity and transparency in AI execution.
+
+---
+
+## Changes Implemented in Module 3 (Course 3)
+
+- Added `human_feedback` node for user-driven updates.  
+- Configured `interrupt_before` to pause before feedback collection.  
+- Enabled state editing using `update_state()` during execution.  
+- Implemented checkpointing for safe resumption post-update.  
+- Demonstrated resuming execution after applying user feedback.  
+- Validated dynamic correction and adaptability in the chess workflow.
+- Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/edit-state-human-feedback.ipynb
+
