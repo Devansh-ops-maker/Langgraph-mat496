@@ -179,3 +179,19 @@
 - Enabled interactive conversation where the model responds contextually.
 
 ---
+
+## Learnings from Module 2 (Course 6)  
+
+- Managed thread-safe state updates across multiple conversation threads.  
+- Implemented context-aware decision logic for dynamic graph flows.  
+- Applied advanced message transformations, including formatting, filtering, and enriching messages before sending to the LLM or tools.
+
+---
+
+### Changes Implemented in Module 2 (Course 6) 
+- Built a book recommendation assistant providing contextual suggestions.  
+- Added conditional nodes to fetch recommendations, ask clarifying questions, or summarize conversations.  
+- Integrated threaded memory for independent conversation threads.  
+- Applied message manipulations: trimming, filtering, summarizing old messages.
+
+---
