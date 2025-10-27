@@ -231,7 +231,7 @@
 
 ---
 
-### Learnings from Module 3 (Course 3)
+## Learnings from Module 3 (Course 3)
 
 - Learned to perform state updates after interruptions using human feedback.  
 - Understood human-in-the-loop correction for adaptive AI workflows.  
@@ -242,7 +242,7 @@
 
 ---
 
-## Changes Implemented in Module 3 (Course 3)
+### Changes Implemented in Module 3 (Course 3)
 
 - Added `human_feedback` node for user-driven updates.  
 - Configured `interrupt_before` to pause before feedback collection.  
