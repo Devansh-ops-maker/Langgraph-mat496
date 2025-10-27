@@ -252,3 +252,27 @@
 - Validated dynamic correction and adaptability in the chess workflow.
 - Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/edit-state-human-feedback.ipynb
 
+---
+
+## Learnings from Module 3 (Course 4)
+
+- Learned how to integrate multiple human feedback loops within a single graph for iterative refinement.  
+- Understood how to manage interruptions across multiple nodes using checkpoint-based recovery.  
+- Explored synchronization of live updates between human inputs and automated decisions in LangGraph.  
+- Learned to combine event streaming, human feedback, and dynamic state updates for real-time correction.  
+- Understood how to build resilient, adaptive, and transparent AI workflows with continuous human-in-the-loop control.
+
+---
+
+### Changes Implemented in Module 3 (Course 4)
+
+- Implemented a multi-feedback chess workflow allowing iterative human corrections at multiple stages.  
+- Added synchronized event streaming with checkpoint recovery to maintain seamless execution.  
+- Enabled conditional pauses before critical decision nodes for controlled human intervention.  
+- Integrated dynamic state updates during mid-run to reflect real-time corrections.  
+- Demonstrated end-to-end adaptive execution combining automation, human feedback, and recovery mechanisms.
+- Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/dynamic-breakpoints.ipynb
+
+---
+
+
