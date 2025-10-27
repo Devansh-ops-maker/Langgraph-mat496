@@ -226,6 +226,7 @@
 - Integrated LangGraph SDK to stream and observe live events.  
 - Demonstrated pausing and resuming graph execution with user input.  
 - Created an interactive workflow showcasing human-in-the-loop decision-making.  
-- Enhanced transparency and control using real-time graph monitoring.  
+- Enhanced transparency and control using real-time graph monitoring.
+- Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/breakpoints.ipynb  
 
 ---
