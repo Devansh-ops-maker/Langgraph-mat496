@@ -211,3 +211,21 @@
 - Implemented **event-driven tracking** to analyze node behavior during conversations
 - Link : https://github.com/langchain-ai/langchain-academy/blob/main/module-3/streaming-interruption.ipynb
 ---  
+
+## Learnings from Module 3 (Course 2)
+- Learned how to use breakpoints in LangGraph to pause execution before specific nodes.  
+- Understood streaming interruptions for human approval or conditional continuation.  
+- Explored real-time event tracking with LangGraph SDK’s streaming API.  
+- Learned how to monitor, inspect, and resume executions dynamically.  
+- Understood how breakpoints enhance debugging and controlled workflow execution.
+    
+---
+
+### Changes Implemented in Module 3 (Course 2)
+- Added breakpoints before tool nodes for user-controlled execution.  
+- Integrated LangGraph SDK to stream and observe live events.  
+- Demonstrated pausing and resuming graph execution with user input.  
+- Created an interactive workflow showcasing human-in-the-loop decision-making.  
+- Enhanced transparency and control using real-time graph monitoring.  
+
+---
