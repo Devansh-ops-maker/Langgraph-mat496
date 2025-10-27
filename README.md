@@ -275,4 +275,25 @@
 
 ---
 
+## Learnings from Module 3 (Course 5)
+
+- Learned how to **fork and replay graph executions** using the LangGraph SDK.  
+- Understood the concept of **checkpoints** to store intermediate graph states for resuming or branching workflows.  
+- Explored how to **replay executions** from checkpoints for debugging, analysis, or experimentation.  
+- Learned how to **fork threads** to explore alternate paths without modifying the original workflow.  
+- Observed how **LangGraph Studio** supports real-time **time tracking** and **execution history visualization** for better workflow analysis.
+
+---
+
+## Changes Implemented in Module 3 (Course 5)
+
+- Implemented **checkpoint replaying** to resume graph executions from saved states.  
+- Added **thread forking** to dynamically create and test alternative workflow paths.  
+- Integrated **time tracking** and **execution history inspection** using LangGraph Studio.  
+- Demonstrated **replay and fork functionalities** through SDK-based event streaming.  
+- Enabled **experimental workflow branching** for analyzi
+- Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-3/time-travel.ipynb
+
+---
+
 
