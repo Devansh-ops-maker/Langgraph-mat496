@@ -195,3 +195,19 @@
 - Applied message manipulations: trimming, filtering, summarizing old messages.
 
 ---
+
+## Learnings from Module 3(Course 1)
+
+- Learned about **LangGraph Dev** and its role in building and visualizing conversational workflows
+- Understood how **threads, runs, and streaming** contribute to real-time interaction tracking
+- Explored **event-based message handling** for creating dynamic and stateful AI behavior
+
+---
+
+### Changes Implemented in Module 3(Course 1)
+
+- Integrated **LangGraph Dev** to monitor and visualize workflow execution
+- Enabled **live streaming** to observe real-time message updates
+- Implemented **event-driven tracking** to analyze node behavior during conversations
+- Link : https://github.com/langchain-ai/langchain-academy/blob/main/module-3/streaming-interruption.ipynb
+---  
