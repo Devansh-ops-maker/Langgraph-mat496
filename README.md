@@ -346,4 +346,23 @@
 - Visualized the multi-turn conversational pipeline using LangGraph’s `xray` mode.  
 - Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-4/map-reduce.ipynb
 
+## Learnings from Module 4 (Course 4)
 
+- Learned how **map-reduce patterns** help break large research tasks into smaller steps and then combine results.
+- Understood how to create **multiple specialized agents** (analysts) that work in parallel on different sub-topics.
+- Explored how to maintain **shared state** so each agent’s output contributes to a unified research goal.
+- Learned to use **sub-graphs** to run repeated conversational workflows like interview loops.
+- Used **reduction logic** to merge multiple analyst outputs into a single, coherent summary or conclusion.
+- Observed how LangGraph enables a **coordinated research pipeline** instead of one-shot prompting.
+
+
+### Changes Implemented in Module 4 (Course 4)
+
+- Added a **topic decomposition step** to break the main research topic into smaller sub-areas.
+- Implemented **parallel analyst interviews** using Send nodes to run multiple agent tasks at once.
+- Added an **interview loop sub-graph** so each analyst can answer multiple questions in sequence.
+- Used a **reducer node** to synthesize insights from all analyst responses into one final report.
+- Structured the entire workflow into a **state-driven research assistant graph** using LangGraph.
+- Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-4/research-assistant.ipynb
+
+----
