@@ -337,6 +337,8 @@
 - Understood how guardrails can prevent incorrect or hallucinated outputs.
 - Observed how conversation state evolves step-by-step through graph execution.
 
+----
+
 ###Changes Implemented in Module 4 (Course 3)
 - Added a conversation state store to retain context between turns.
 - Implemented an intent classifier node to decide the next action in the graph.
