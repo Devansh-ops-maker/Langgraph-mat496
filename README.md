@@ -296,4 +296,21 @@
 
 ---
 
+## Learnings from Module 4 (Course 1)
+- Learned the concept of fan-out and fan-in patterns in LangGraph for parallel and convergent execution flows.  
+- Understood how multiple retrieval nodes (fan-out) can operate simultaneously to gather diverse context.  
+- Learned to merge outputs from parallel branches using reducers (fan-in) for unified reasoning.  
+- Explored how to combine tool-based retrieval with LLM-based synthesis for better factual accuracy.  
+- Understood the importance of defining state schemas that support aggregated context from multiple nodes.  
+- Learned to build end-to-end retrieval-augmented generation (RAG) pipelines using LangGraph.
+
+---
+
+### Changes Implemented in Module 4(Course 1)
+- Implemented a fan-out graph with Wikipedia and web search retrieval nodes running in parallel.  
+- Added a context reducer to safely combine retrieved data into a single state.  
+- Designed a generate_answer node to synthesize a final response from merged context.  
+- Demonstrated a complete retrieval and reasoning flow powered by LLM and multiple APIs.  
+- Visualized the workflow showing parallel retrieval (fan-out) and unified response generation (fan-in).  
+
 
