@@ -311,6 +311,20 @@
 - Added a context reducer to safely combine retrieved data into a single state.  
 - Designed a generate_answer node to synthesize a final response from merged context.  
 - Demonstrated a complete retrieval and reasoning flow powered by LLM and multiple APIs.  
-- Visualized the workflow showing parallel retrieval (fan-out) and unified response generation (fan-in).  
+- Visualized the workflow showing parallel retrieval (fan-out) and unified response generation (fan-in).
+
+---
+
+## Learnings from Module 4 (Course 2)
+- Learned to design modular multi-agent workflows using sub-graphs.  
+- Understood communication through overlapping state keys.  
+- Observed parallel sub-graph execution with reducers for merging outputs.  
+
+### Changes Implemented in Module 4 (Course 2)
+- Created sub-graphs for sentiment analysis and issue summarization.  
+- Integrated sub-graphs into a parent graph for coordinated execution.  
+- Visualized nested structure using LangGraph’s `xray` mode.  
+
+----
 
 
