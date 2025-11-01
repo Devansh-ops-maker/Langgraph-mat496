@@ -329,23 +329,21 @@
 
 ----
 
-##Learnings from Module 4 (Course 3)
-- Learned how to build multi-turn conversational workflows using LangGraph.
-- Understood how conversation state can store memory across user interactions.
-- Learned to route user messages to different nodes using intent classification.
-- Explored how feedback loops allow refining or correcting earlier responses.
-- Understood how guardrails can prevent incorrect or hallucinated outputs.
+## Learnings from Module 4 (Course 3)
+- Learned how to build multi-turn conversational workflows using LangGraph.  
+- Understood how conversation state can store memory across user interactions.  
+- Learned to route user messages to different nodes using intent classification.  
+- Explored how feedback loops allow refining or correcting earlier responses.  
+- Understood how guardrails can prevent incorrect or hallucinated outputs.  
 - Observed how conversation state evolves step-by-step through graph execution.
 
-----
-
-###Changes Implemented in Module 4 (Course 3)
-- Added a conversation state store to retain context between turns.
-- Implemented an intent classifier node to decide the next action in the graph.
-- Added a memory update node to selectively store key information from the conversation.
-- Introduced a refinement loop node to improve answers when user feedback indicates confusion.
-- Linked the classifier, memory, retrieval, and generation nodes into a unified conversation graph.
-- Visualized the final multi-turn conversational pipeline using LangGraph’s xray mode.
+### Changes Implemented in Module 4 (Course 3)
+- Added a conversation state store to retain context between turns.  
+- Implemented an intent classifier node to decide the next action in the graph.  
+- Added a memory update node to selectively store key information from the conversation.  
+- Introduced a refinement loop node to improve responses when user feedback indicates confusion.  
+- Linked the classifier, memory, retrieval, and generation nodes into a unified conversation graph.  
+- Visualized the multi-turn conversational pipeline using LangGraph’s `xray` mode.  
 - Link: https://github.com/langchain-ai/langchain-academy/blob/main/module-4/map-reduce.ipynb
 
 
